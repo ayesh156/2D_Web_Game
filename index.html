@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>2D Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onkeyup="keyCheck(event)">
+
+    <!-- Login Page -->
+
+    <div class="bg-img login-container">
+        <div class="content">
+            <header class="header1">Welcome to the</header>
+            <header class="header2">Run Infinite</header>
+            <div class="field">
+                <span><i class="fa fa-user"></i></span>
+                <input type="text" placeholder="Enter Your Name" id="name" autocomplete="off">
+            </div>
+            <div class="field space">
+                <input type="submit" onclick="loginContainer();" value="START">
+            </div>
+
+            <div class="intro1">Click Enter Key to Run</div>
+
+            <div class="intro2">Click Space Bar to Jump</div>
+
+        </div>
+    </div>
+
+    <!-- Score Page -->
+
+    <div class="bg-img score-container">
+
+        <div class="content">
+            <header class="header2">CONGRATULATIONS!</header>
+
+            <div class="header1" id="header1">Score: 0</div>
+
+            <form action="index.html">
+                <div class="field space">
+                    <input type="submit" value="NEW GAME">
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+
+    <!-- Game Page -->
+
+    <div class="background" id="background">
+        <div>
+            <div class="flame"></div>
+            <div class="score" id="score">Score: 0</div>
+        </div>
+
+        <img src="resources/Run__000.png" class="boy" id="boy" />
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
